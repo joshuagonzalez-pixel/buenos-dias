@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffd8df" />
+  <title>Buenos días, mi amor ❤️</title>
+  <style>
+    :root{--pink:#ff6f91;--rose:#e94f79;--cream:#fff9f5;--ink:#633b52}
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;font-family:Georgia,'Times New Roman',serif;color:var(--ink)}
+    body{min-height:100vh;overflow:hidden;background:linear-gradient(180deg,#b8d8ff 0%,#ffe0e2 48%,#fff0d7 100%);display:grid;place-items:center;padding:22px;position:relative}
+    .sun{position:fixed;width:clamp(115px,20vw,205px);height:clamp(115px,20vw,205px);border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff9c8,#ffd17d 58%,#ffad9d);top:8%;left:50%;transform:translateX(-50%);box-shadow:0 0 55px #ffe7a8aa;animation:sunrise 3s ease-out both;z-index:0}
+    .cloud{position:fixed;width:150px;height:38px;background:#ffffff9c;border-radius:40px;filter:blur(.3px);z-index:0;animation:drift 20s linear infinite}
+    .cloud:before,.cloud:after{content:'';position:absolute;background:inherit;border-radius:50%}.cloud:before{width:55px;height:55px;left:23px;top:-24px}.cloud:after{width:70px;height:68px;right:23px;top:-34px}
+    .c1{top:21%;left:-180px;animation-duration:29s}.c2{top:36%;left:-190px;transform:scale(.7);animation-duration:38s;animation-delay:-13s}
+    .card{position:relative;z-index:2;width:min(100%,620px);padding:clamp(28px,6vw,54px) clamp(22px,6vw,58px);text-align:center;background:#fffaf1d9;border:1px solid #ffffffc9;border-radius:30px;box-shadow:0 24px 70px #96536c24;backdrop-filter:blur(9px);animation:appear 1.2s .2s both}
+    .eyebrow{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:.7rem;color:#b66b83;margin-bottom:15px}
+    h1{font-size:clamp(2.5rem,9vw,5rem);line-height:.98;margin:0;color:#c94f78;font-weight:normal;letter-spacing:-.045em}
+    h1 span{display:block;color:#e98298;font-style:italic;font-size:.75em;margin-top:8px}
+    .divider{display:flex;align-items:center;gap:12px;justify-content:center;margin:24px 0 18px;color:#e98298}.divider:before,.divider:after{content:'';height:1px;width:52px;background:#e9b2bf}
+    .message{font-size:clamp(1.05rem,3.3vw,1.25rem);line-height:1.8;margin:0 auto;max-width:440px}
+    .message strong{color:#c94f78;font-weight:normal;font-style:italic}
+    .signature{font-size:1.35rem;font-style:italic;color:#c94f78;margin:23px 0 0}
+    .heart-button{margin-top:27px;border:0;border-radius:999px;padding:14px 23px;background:linear-gradient(135deg,#ff8da8,#e95b84);color:white;font:600 .92rem Arial,sans-serif;letter-spacing:.02em;box-shadow:0 8px 22px #e95b8438;cursor:pointer;transition:transform .2s,box-shadow .2s}
+    .heart-button:hover{transform:translateY(-3px);box-shadow:0 12px 27px #e95b8455}.heart-button:active{transform:scale(.97)}
+    .tiny-note{font: .75rem Arial,sans-serif;color:#a97b8e;margin-top:16px}
+    .float-heart{position:fixed;bottom:-40px;z-index:1;pointer-events:none;animation:floatUp linear forwards;opacity:0;color:#f16f92;text-shadow:0 2px 10px #fff8}
+    .sparkle{position:fixed;z-index:1;pointer-events:none;color:#fff9d9;animation:twinkle 2.6s ease-in-out infinite}
+    @keyframes sunrise{from{top:24%;opacity:.35;transform:translate(-50%,25px)}to{top:8%;opacity:1;transform:translate(-50%,0)}}
+    @keyframes drift{from{margin-left:0}to{margin-left:calc(100vw + 250px)}}
+    @keyframes appear{from{opacity:0;transform:translateY(22px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+    @keyframes floatUp{0%{transform:translate3d(0,0,0) rotate(0deg) scale(.7);opacity:0}12%{opacity:.85}100%{transform:translate3d(var(--sway),-115vh,0) rotate(var(--spin)) scale(1.25);opacity:0}}
+    @keyframes twinkle{0%,100%{opacity:.25;transform:scale(.7)}50%{opacity:1;transform:scale(1.15)}}
+    @media(max-height:700px){.sun{top:3%;width:100px;height:100px}.card{padding-top:24px;padding-bottom:24px}.divider{margin:14px 0}.message{line-height:1.55}.heart-button{margin-top:18px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <div class="sun" aria-hidden="true"></div>
+  <div class="cloud c1" aria-hidden="true"></div><div class="cloud c2" aria-hidden="true"></div>
+  <main class="card">
+    <div class="eyebrow">Un nuevo día · un mismo amor</div>
+    <h1>Buenos días,<span>mi amor ❤️</span></h1>
+    <div class="divider" aria-hidden="true">♡</div>
+    <p class="message">Quisiera ser la luz del sol que acaricia tu ventana, el primer pensamiento bonito que te abrace al despertar y el besito que te recuerde que, incluso a la distancia, <strong>hay alguien que te ama con todo el corazón.</strong><br><br>Que hoy la vida te regale motivos para sonreír, que nada apague esa luz tan tuya y que nunca olvides lo increíble que eres para mí.</p>
+    <p class="signature">Hoy, mañana y en todos mis días… tú. ♡</p>
+    <button class="heart-button" id="loveButton" type="button">Un besito para ti 💋</button>
+    <div class="tiny-note">Hecho con muchísimo amor, solo para ti.</div>
+  </main>
+  <script>
+    const symbols = ['♥','♡','❤','✦'];
+    function makeHeart(extra=false){
+      const el=document.createElement('span');
+      el.className=extra?'float-heart':'sparkle';
+      el.textContent=extra?symbols[Math.floor(Math.random()*3)]: '✧';
+      if(extra){
+        el.style.left=(Math.random()*100)+'vw';
+        el.style.fontSize=(14+Math.random()*23)+'px';
+        el.style.setProperty('--sway',((Math.random()-.5)*180)+'px');
+        el.style.setProperty('--spin',((Math.random()-.5)*100)+'deg');
+        el.style.animationDuration=(5+Math.random()*5)+'s';
+      }else{
+        el.style.left=(8+Math.random()*84)+'vw';el.style.top=(10+Math.random()*75)+'vh';
+        el.style.fontSize=(12+Math.random()*17)+'px';el.style.animationDelay=(Math.random()*2)+'s';
+      }
+      document.body.appendChild(el);
+      if(extra) setTimeout(()=>el.remove(),10500); else setTimeout(()=>el.remove(),2800);
+    }
+    for(let i=0;i<14;i++) setTimeout(()=>makeHeart(false),i*130);
+    setInterval(()=>makeHeart(true),430);
+    document.getElementById('loveButton').addEventListener('click',()=>{
+      for(let i=0;i<28;i++) setTimeout(()=>makeHeart(true),i*45);
+      const button=document.getElementById('loveButton');
+      button.textContent='¡Te mando un millón de besos! ❤️';
+      setTimeout(()=>button.textContent='Un besito para ti 💋',2600);
+    });
+  </script>
+</body>
+</html>
